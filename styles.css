@@ -1,47 +1,74 @@
+body {
+    font-family: arial,sans-serif;
+}
+
 .menu{
     display: flex;
     justify-content: flex-end;
 }
+
 .menu__sencillo{
     border: none;
     background: none;
 }
+
 .menu__botones{
     border: none;
     background: none;
 }
+
 .menu__azul{
-   background:  #1a73e8;
-   color: white;
-   border: 1px solid transparent;
-   border-radius: 2px;
+    background:  #1a73e8;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 2px;
 }
 .buscador__boton{
-    border: none;
-    background: none;
+    background-color: #dce4ee;
+    transition: 0.5s;
+    border-radius: 10px;
+    border:none;
+    height:30px;
+    display:flex;
+    align-items:center
 }
+.buscador__boton p{
+margin: 0 3px
+}
+
+.buscador__boton:hover {
+    background-color: #ccd1d8;
+}
+
 .titulo_contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.titulo_contenedor h2 {
-    font-size: 100px;
-    margin: 20px 0px;
-}
-
-#titulo {
-    background-image:url(chrome://new-tab-page/icons/google_logo.svg);
-}
-
 .formato_busqueda {
-    width:80%;
+    border: 1px solid;
+    border-radius: 15px;
+    display:flex;
+    padding:5px;
+    align-items: center;
 }
 
 #input_busqueda{
-    border-radius: 15px;
     height: 36px;
-    font-size: 9pt;
+    font-size: 13pt;
     width: 400px;
+    border:none;
+    margin-left: 10px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.botones_busqueda {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 15px;
 }
